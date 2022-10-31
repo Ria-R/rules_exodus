@@ -1,0 +1,79 @@
+.body {
+    font-family: 'Century Schoolbook', sans-serif;
+    background: linear-gradient(133.24deg, #A353BC -23.78%, #152276 32.8%, #020C20 86.39%);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height:1024px;
+    width:1440px;
+}
+.content {
+    width: 83%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header{
+    margin-top: 100px;
+    font-size: 75px;
+    font-weight: 400;
+}
+.block1, .block2,.block3,.block4 {
+    display: flex;
+    height: 400px;
+}
+.block2,.block4{
+    flex-direction: row-reverse;
+    height: 400px;
+}
+.text1,.text2,.text3,.text4{
+    width: 63%;
+    font-size:22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+}
+.text2,.text4{
+    text-align: center;
+}
+.img1,.img2,.img3,.img4 {
+    padding-left: 73px;
+    padding-right: 73px;
+    height: 60%;
+}
+@media only screen and (max-width: 430px)
+{
+    .body{
+
+        width: 430px;
+        height: auto;
+
+    }
+    
+    .img1 ,.img2,.img3,.img4 {
+        padding-left: 6px;
+        padding-right: 6px;
+        height: 60%;
+    }
+    .text1,.text2,.text3,.text4{
+        font-size:14px;
+    }
+    .block1, .block2,.block3,.block4 {
+        display: flex;
+        height: 136px;
+    }
+    .block2,.block4{
+        flex-direction: row-reverse;
+        height: 136px;
+    }
+    
+
+}
